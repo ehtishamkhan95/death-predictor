@@ -35,13 +35,13 @@ function deathDay () {
     if (dMonth[0] === 'January' || dMonth[0] === 'March' || dMonth[0] === 'May' ||
     dMonth[0] === 'July' || dMonth[0] === 'August' || dMonth[0] === 'October' ||
     dMonth[0] === 'December') {
-        randomDayNumber = Math.floor(Math.random()*32);
+        randomDayNumber = Math.floor(Math.random()*31)+1;
 
     } else if (dMonth[0] === 'February') {
-        randomDayNumber = Math.floor(Math.random()*29);
+        randomDayNumber = Math.floor(Math.random()*28)+1;
 
     } else {
-        randomDayNumber = Math.floor(Math.random()*31);
+        randomDayNumber = Math.floor(Math.random()*30)+1;
     }
 
     dDay= randomDayNumber;
