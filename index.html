@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Predictor</title>
+
+    <link rel="shortcut icon" href="./assets/favicon/icons8-skull-those-icons-lineal-96.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+    <audio autoplay loop hidden id="music">
+        <source id="bg-music" src="./assets/music/start2.mp3" type="audio/mp3">
+        Audio not supported
+    </audio>
+    <main>
+        <h1 class="heading">DEATH PREDICTOR
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+            <span class="drip"></span>
+        </h1>
+
+        <h2 id="entry-message">Find out your end</h2>
+
+        <div class="data-input">
+            <form action="#" id="message-form" name="message-form">
+                <label class="form-label" for="username">Your name: </label>
+                <input type="text" name="username" id="username">
+                <label class="form-label" for="age">Your age</label>
+                <input type="text" name="age" id="age">
+                <br>
+                <input type="submit" id="btn" value="Predict">
+            </form>
+        </div>
+
+        <h3 id="death-message"></h3>
+
+        <figure>
+            <img id="gif-image" src="#" alt="death gif">
+        </figure>
+
+        <button id="try-again" onClick="window.location.reload();">Try again?</button>
+    </main>
+</body>
+</html>
