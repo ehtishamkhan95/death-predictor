@@ -22,7 +22,7 @@ let tryAgainBtn = document.getElementById('try-again');
 let bgm = document.getElementById('bg-music');
 let music = document.getElementById('music');
 
-music.play();
+music.load();
 
 function deathMonth () {
     let randomMonthNumber = Math.floor(Math.random()*12);
